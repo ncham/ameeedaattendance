@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$t=time();
+echo($t . "<br>");
+$datetime = date("Y-m-d H:i:s", $t);
+echo(date("Y-m-d H:i:s", $t) . "<br/>");
+echo($datetime . "<br/>");
+$date = date("Y-m-d", strtotime($datetime));
+$time = date("H:i:s", strtotime($datetime));
+echo date('Y-m-d H:i:s', strtotime("$date $time"));
+?>
+
+</body>
+</html>
